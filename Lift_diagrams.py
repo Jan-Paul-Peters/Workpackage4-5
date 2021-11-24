@@ -93,11 +93,6 @@ def Cd_distribution(CL):
   Cd = lambda y: Cl_distribution(CL)[0](y) * -Ai_distribution(CL)(y)  #NOT DONE.. W.I.P. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   return Cd
 
-def drag_distribution(ypos, alpha):
-  D = CDrag_distribution(ypos, alpha)*q*cord(ypos)
-  return D
-
-
 # %%
 def Cm_distribution(CL):
     Cm = lambda y: Cm_0(y) + (CL-CL_0)/(CL_10-CL_0)*(Cm_10(y)-Cm_0(y))
